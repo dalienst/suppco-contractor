@@ -7,7 +7,7 @@ import NavList from "../components/navbar/NavList";
 function Navbar() {
   return (
     <>
-      <nav className="navbar sticky-top border-bottom navbar-bg">
+      <nav className="navbar sticky-top border-bottom navbar-bg mb-3">
         <div className="container-fluid">
           <div className="navbar-brand">
             <button
