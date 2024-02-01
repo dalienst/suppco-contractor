@@ -8,7 +8,8 @@ function Dashboard() {
       <div className="container">
         <PageBanner name="Dashboard" />
 
-        <div className="card bg-dark-subtle">
+        <div className="card bg-primary-subtle shadow mb-3">
+          <h4 className="card-header">Profiles</h4>
           <div className="card-body">
             <div className="row">
               <div className="col-md-6 col-sm-12 mb-3">
@@ -22,7 +23,7 @@ function Dashboard() {
                     <p className="card-text">0712345678</p>
                     <p className="card-text">Mombasa</p>
                   </div>
-                  <div className="card-footer">
+                  <div className="card-footer bg-white">
                     <Link className="btn btn-primary">Update</Link>
                   </div>
                 </div>
