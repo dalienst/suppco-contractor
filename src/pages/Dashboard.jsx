@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import PageBanner from "../components/pages/PageBanner";
 import { Link } from "react-router-dom";
 import { dummyConstructionData } from "../data/OrdersData";
 
 function Dashboard() {
+  const [statusFilter, setStatusFilter] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredData = dummyConstructionData.filter((item) => {
+    // Filter by status
+    if (statusFilter && item.status !== statusFilter) {
+      return false;
+    }
+
+    // Filter by search query (case-insensitive)
+    if (
+      searchQuery &&
+      !(
+        item.product.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.supplierName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.supplierCompany.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    ) {
+      return false;
+    }
+
+    return true;
+  });
+
+  const handleFilterClick = (status) => {
+    setStatusFilter(status);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    // Perform search based on the searchQuery state
+    // You can customize this logic if needed
+  };
+
   return (
     <>
       <div className="container">
@@ -63,25 +97,51 @@ function Dashboard() {
 
             {/* creating filters for the table */}
             <div className="mb-3 d-flex">
-              <button className="btn mx-1 btn-sm btn-success">
+              <button
+                className={`btn mx-1 btn-sm ${
+                  statusFilter === "Completed"
+                    ? "btn-success"
+                    : "btn-outline-success"
+                }`}
+                onClick={() => handleFilterClick("Completed")}
+              >
                 <i className="bi bi-hourglass-bottom fst-normal">Completed</i>
               </button>
-              <button className="btn mx-1 btn-sm btn-warning">
+              <button
+                className={`btn mx-1 btn-sm ${
+                  statusFilter === "Active"
+                    ? "btn-warning"
+                    : "btn-outline-warning"
+                }`}
+                onClick={() => handleFilterClick("Active")}
+              >
                 <i className="bi bi-hourglass-split fst-normal">Active</i>
               </button>
-              <button className="btn mx-1 btn-sm btn-danger">
+              <button
+                className={`btn mx-1 btn-sm ${
+                  statusFilter === "Pending"
+                    ? "btn-danger"
+                    : "btn-outline-danger"
+                }`}
+                onClick={() => handleFilterClick("Pending")}
+              >
                 <i className="bi bi-hourglass-top fst-normal">Pending</i>
               </button>
             </div>
             {/* end */}
 
-            {/* Search function */}
+            {/* Search form */}
             <div className="mb-2">
-              <form role="search" className="d-flex">
+              <form
+                role="search"
+                className="d-flex"
+                onSubmit={handleSearchSubmit}
+              >
                 <input
                   type="search"
                   placeholder="Search"
                   className="form-control border-primary me-2"
+                  onChange={(e) => setSearchQuery(e.target.value)}
                 />
                 <button className="btn btn-primary" type="submit">
                   Search
@@ -104,7 +164,7 @@ function Dashboard() {
                 </tr>
               </thead>
               <tbody>
-                {dummyConstructionData.map((item) => (
+                {filteredData.map((item) => (
                   <>
                     <tr key={item.id}>
                       <td>{item.id}</td>
