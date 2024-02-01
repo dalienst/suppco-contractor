@@ -7,11 +7,11 @@ import NavList from "../components/navbar/NavList";
 function Navbar() {
   return (
     <>
-      <nav className="navbar sticky-top border-bottom navbar-bg mb-3">
+      <nav className="navbar sticky-top border-bottom bg-primary-subtle mb-3">
         <div className="container-fluid">
           <div className="navbar-brand">
             <button
-              className="btn btn-dark btn-sm"
+              className="btn btn-primary btn-sm"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasScrolling"
@@ -28,7 +28,7 @@ function Navbar() {
 
             {/* offcanvas */}
             <div
-              className="offcanvas offcanvas-start navbar-bg"
+              className="offcanvas offcanvas-start"
               data-bs-scroll="true"
               data-bs-backdrop="false"
               tabIndex="-1"
