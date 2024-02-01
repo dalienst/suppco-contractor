@@ -1,0 +1,14 @@
+.navbar-bg {
+   background-color: goldenrod; 
+}
+
+.avatar-side {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.list-color {
+    border-color: red;
+}
