@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import imgAvatar from "../assets/images/canvas/avatar.jpg";
 import { publicLinks } from "../constants/links";
+import NavList from "../components/navbar/NavList";
 
 function Navbar() {
   return (
@@ -48,39 +49,9 @@ function Navbar() {
               <hr className="text-dark" />
 
               <div className="offcanvas-body p-0">
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item navbar-bg text-end border border-dark border-start-0 border-end-0">
-                    <Link className="text-decoration-none fw-semibold text-dark">
-                      Dashboard
-                    </Link>
-                  </li>
-
-                  <li className="list-group-item navbar-bg text-end border border-dark border-start-0 border-end-0 border-top-0">
-                    <Link className="text-decoration-none fw-semibold text-dark">
-                      Dashboard
-                    </Link>
-                  </li>
-
-                  <li className="list-group-item navbar-bg text-end border border-dark border-start-0 border-end-0 border-top-0">
-                    <Link className="text-decoration-none fw-semibold text-dark">
-                      Dashboard
-                    </Link>
-                  </li>
-
-                  <li className="list-group-item navbar-bg text-end border border-dark border-start-0 border-end-0 border-top-0">
-                    <Link className="text-decoration-none fw-semibold text-dark">
-                      Dashboard
-                    </Link>
-                  </li>
-
-                  <li className="list-group-item navbar-bg text-end border border-dark border-start-0 border-end-0 border-top-0">
-                    <Link className="text-decoration-none fw-semibold text-dark">
-                      Dashboard
-                    </Link>
-                  </li>
-                </ul>
+                <NavList />
               </div>
-
+              <hr className="text-dark" />
               <div className="p-2 d-flex align-items-center justify-content-between">
                 <div>
                   <img src={imgAvatar} className="avatar-side" alt="" />

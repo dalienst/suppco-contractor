@@ -1,5 +1,5 @@
 .navbar-bg {
-   background-color: goldenrod; 
+   background-color: #daa520; 
 }
 
 .avatar-side {
@@ -11,4 +11,6 @@
 
 .list-color {
     border-color: red;
+    background-color: goldenrod;
+    border: 1px solid red;
 }
