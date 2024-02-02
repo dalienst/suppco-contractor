@@ -3,6 +3,11 @@ const publicLinks = {
   Login: "/login",
   Register: "/register",
   Dashboard: "/dashboard",
+  Sites: "/site",
+  Inventory: "/inventory",
+  Orders: "/orders",
+  Delivery: "/deliveries",
+  Employees: "/employees",
 };
 
 export { publicLinks };
