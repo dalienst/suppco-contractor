@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dummyConstructionData } from "../data/OrdersData";
+import { dummyConstructionData } from "../../data/OrdersData";
 
 function DashboardOrdersTable() {
   const [statusFilter, setStatusFilter] = useState(null);
