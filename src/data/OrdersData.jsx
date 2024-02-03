@@ -2,6 +2,30 @@ const dummyConstructionData = [
   {
     id: 1,
     product: "Concrete Mixer",
+    productDetail: {
+      detail: {
+        category: "Builder's Plant",
+        subCategory: "N/A",
+        material: "Concrete Mixer",
+        rental: "10hrs",
+        quantity: "1",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "ABC Construction Supplies",
     supplierDetail: {
       name: "ABC Construction Supplies",
@@ -21,6 +45,30 @@ const dummyConstructionData = [
   {
     id: 2,
     product: "Steel Reinforcement Bars",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "XYZ Steel Co.",
     supplierDetail: {
       name: "XYZ Steel Co.",
@@ -40,6 +88,30 @@ const dummyConstructionData = [
   {
     id: 4,
     product: "Cement Bags",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "Cement Warehouse Ltd.",
     supplierDetail: {
       name: "Cement Warehouse Ltd.",
@@ -58,6 +130,30 @@ const dummyConstructionData = [
   {
     id: 5,
     product: "Wooden Planks",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "Timber Co-op",
     supplierDetail: {
       name: "Timber Co-op",
@@ -76,6 +172,30 @@ const dummyConstructionData = [
   {
     id: 6,
     product: "Construction Nails",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "FastenMaster Supplies",
     supplierDetail: {
       name: "FastenMaster Supplies",
@@ -94,6 +214,30 @@ const dummyConstructionData = [
   {
     id: 7,
     product: "Paint Buckets",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "ColorCraft Paints",
     supplierDetail: {
       name: "ColorCraft Paints",
@@ -112,6 +256,30 @@ const dummyConstructionData = [
   {
     id: 8,
     product: "Electrical Wiring",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "PowerCable Solutions",
     supplierDetail: {
       name: "PowerCable Solutions",
@@ -130,6 +298,30 @@ const dummyConstructionData = [
   {
     id: 9,
     product: "Safety Helmets",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "SafeGear Industries",
     supplierDetail: {
       name: "SafeGear Industries",
@@ -146,152 +338,32 @@ const dummyConstructionData = [
     status: "Completed",
   },
   {
-    id: 10,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-10",
-    status: "Pending",
-  },
-  {
-    id: 11,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-11",
-    status: "Active",
-  },
-  {
-    id: 12,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-12",
-    status: "Pending",
-  },
-  {
-    id: 13,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-13",
-    status: "Completed",
-  },
-  {
-    id: 14,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-14",
-    status: "Active",
-  },
-  {
-    id: 15,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-15",
-    status: "Pending",
-  },
-  {
-    id: 16,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-16",
-    status: "Completed",
-  },
-  {
-    id: 17,
-    product: "Concrete Blocks",
-    supplierName: "SolidBlock Manufacturing",
-    supplierDetail: {
-      name: "SolidBlock Manufacturing",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    supplierCompany: "SolidBlock Co.",
-    supplierCompanyDetail: {
-      name: "SolidBlock Co.",
-      address: "369 Birch Street, Anytown USA",
-      phone: "+1 (555) 789-0123",
-    },
-    date: "2024-02-17",
-    status: "Active",
-  },
-  {
     id: 18,
     product: "Concrete Blocks",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "SolidBlock Manufacturing",
     supplierDetail: {
       name: "SolidBlock Manufacturing",
@@ -309,6 +381,30 @@ const dummyConstructionData = [
   {
     id: 19,
     product: "Paint Rollers",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "ColorRoll Paints",
     supplierDetail: {
       name: "ColorRoll Paints",
@@ -327,6 +423,30 @@ const dummyConstructionData = [
   {
     id: 20,
     product: "Heavy-Duty Tarps",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "TarpTech Solutions",
     supplierDetail: {
       name: "TarpTech Solutions",
@@ -345,6 +465,30 @@ const dummyConstructionData = [
   {
     id: 21,
     product: "Concrete Screws",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "FastenTech Supplies",
     supplierDetail: {
       name: "FastenTech Supplies",
@@ -363,6 +507,30 @@ const dummyConstructionData = [
   {
     id: 22,
     product: "Plywood Sheets",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "PlyCraft Timber",
     supplierDetail: {
       name: "PlyCraft Timber",
@@ -381,6 +549,56 @@ const dummyConstructionData = [
   {
     id: 23,
     product: "Plumbing Pipes",
+    productDetail: {
+      detail: {
+        category: "Plumbing and Electricity",
+        subCategory: "N/A",
+        material: "Pipe",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100",
+        plan: "Payment Plan",
+        method: "Mobile Transfer",
+        total: "10,000",
+        deposit: "20%",
+        breakdown: {
+          plan1: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan2: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan3: {
+            amount: 2000,
+            date: "2024-04-03",
+            percentage: "20%",
+          },
+          plan4: {
+            amount: 2000,
+            date: "2024-05-03",
+            percentage: "20%",
+          },
+          plan5: {
+            amount: 2000,
+            date: "2024-06-03",
+            percentage: "20%",
+          },
+        },
+      },
+      deliveryPlan: {
+        option: "Contractor",
+        destination: "N/A",
+        pricing: "N/A",
+        cost: "N/A",
+      },
+    },
     supplierName: "PipeMaster Plumbing",
     supplierDetail: {
       name: "PipeMaster Plumbing",
@@ -399,6 +617,30 @@ const dummyConstructionData = [
   {
     id: 24,
     product: "Angle Grinders",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "GrindTech Tools",
     supplierDetail: {
       name: "GrindTech Tools",
@@ -417,6 +659,30 @@ const dummyConstructionData = [
   {
     id: 25,
     product: "Roofing Nails",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "NailCraft Fasteners",
     supplierDetail: {
       name: "NailCraft Fasteners",
@@ -435,6 +701,30 @@ const dummyConstructionData = [
   {
     id: 26,
     product: "Safety Goggles",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "VisionGuard Safety",
     supplierDetail: {
       name: "VisionGuard Safety",
@@ -453,6 +743,30 @@ const dummyConstructionData = [
   {
     id: 27,
     product: "Paint Brushes",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "BrushCraft Paints",
     supplierDetail: {
       name: "BrushCraft Paints",
@@ -471,6 +785,30 @@ const dummyConstructionData = [
   {
     id: 28,
     product: "Construction Tape",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "TapeMaster Supplies",
     supplierDetail: {
       name: "TapeMaster Supplies",
@@ -489,6 +827,30 @@ const dummyConstructionData = [
   {
     id: 29,
     product: "Concrete Sealer",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "SealTech Products",
     supplierDetail: {
       name: "SealTech Products",
@@ -507,6 +869,30 @@ const dummyConstructionData = [
   {
     id: 30,
     product: "Metal Studs",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "MetalCraft Industries",
     supplierDetail: {
       name: "MetalCraft Industries",
@@ -525,6 +911,56 @@ const dummyConstructionData = [
   {
     id: 31,
     product: "PVC Pipes",
+    productDetail: {
+      detail: {
+        category: "Plumbing and Electricity",
+        subCategory: "N/A",
+        material: "Pipe",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100",
+        plan: "Payment Plan",
+        method: "Mobile Transfer",
+        total: "10,000",
+        deposit: "20%",
+        breakdown: {
+          plan1: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan2: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan3: {
+            amount: 2000,
+            date: "2024-04-03",
+            percentage: "20%",
+          },
+          plan4: {
+            amount: 2000,
+            date: "2024-05-03",
+            percentage: "20%",
+          },
+          plan5: {
+            amount: 2000,
+            date: "2024-06-03",
+            percentage: "20%",
+          },
+        },
+      },
+      deliveryPlan: {
+        option: "Contractor",
+        destination: "N/A",
+        pricing: "N/A",
+        cost: "N/A",
+      },
+    },
     supplierName: "PipePlastic Solutions",
     supplierDetail: {
       name: "PipePlastic Solutions",
@@ -543,6 +979,30 @@ const dummyConstructionData = [
   {
     id: 32,
     product: "Concrete Stain",
+    productDetail: {
+      detail: {
+        category: "Builder's Plant",
+        subCategory: "N/A",
+        material: "Concrete Mixer",
+        rental: "10hrs",
+        quantity: "1",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "StainCraft Products",
     supplierDetail: {
       name: "StainCraft Products",
@@ -561,6 +1021,30 @@ const dummyConstructionData = [
   {
     id: 33,
     product: "Landscape Timbers",
+    productDetail: {
+      detail: {
+        category: "Builder's Plant",
+        subCategory: "N/A",
+        material: "Concrete Mixer",
+        rental: "10hrs",
+        quantity: "1",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "TimberLand Supplies",
     supplierDetail: {
       name: "TimberLand Supplies",
@@ -579,6 +1063,30 @@ const dummyConstructionData = [
   {
     id: 34,
     product: "Drywall Screws",
+    productDetail: {
+      detail: {
+        category: "Builder's Plant",
+        subCategory: "N/A",
+        material: "Concrete Mixer",
+        rental: "10hrs",
+        quantity: "1",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "ScrewMaster Fasteners",
     supplierDetail: {
       name: "ScrewMaster Fasteners",
@@ -597,6 +1105,56 @@ const dummyConstructionData = [
   {
     id: 35,
     product: "Power Saws",
+    productDetail: {
+      detail: {
+        category: "Plumbing and Electricity",
+        subCategory: "N/A",
+        material: "Pipe",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100",
+        plan: "Payment Plan",
+        method: "Mobile Transfer",
+        total: "10,000",
+        deposit: "20%",
+        breakdown: {
+          plan1: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan2: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan3: {
+            amount: 2000,
+            date: "2024-04-03",
+            percentage: "20%",
+          },
+          plan4: {
+            amount: 2000,
+            date: "2024-05-03",
+            percentage: "20%",
+          },
+          plan5: {
+            amount: 2000,
+            date: "2024-06-03",
+            percentage: "20%",
+          },
+        },
+      },
+      deliveryPlan: {
+        option: "Contractor",
+        destination: "N/A",
+        pricing: "N/A",
+        cost: "N/A",
+      },
+    },
     supplierName: "SawTech Tools",
     supplierDetail: {
       name: "SawTech Tools",
@@ -615,6 +1173,30 @@ const dummyConstructionData = [
   {
     id: 36,
     product: "Caulking Guns",
+    productDetail: {
+      detail: {
+        category: "Builder's Plant",
+        subCategory: "N/A",
+        material: "Concrete Mixer",
+        rental: "10hrs",
+        quantity: "1",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "CaulkCraft Supplies",
     supplierDetail: {
       name: "CaulkCraft Supplies",
@@ -633,6 +1215,30 @@ const dummyConstructionData = [
   {
     id: 37,
     product: "Insulation Foam",
+    productDetail: {
+      detail: {
+        category: "Builder's Plant",
+        subCategory: "N/A",
+        material: "Concrete Mixer",
+        rental: "10hrs",
+        quantity: "1",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "FoamGuard Insulation",
     supplierDetail: {
       name: "FoamGuard Insulation",
@@ -651,6 +1257,30 @@ const dummyConstructionData = [
   {
     id: 38,
     product: "Construction Adhesive",
+    productDetail: {
+      detail: {
+        category: "Builder's Plant",
+        subCategory: "N/A",
+        material: "Concrete Mixer",
+        rental: "10hrs",
+        quantity: "1",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "AdhesiveTech Products",
     supplierDetail: {
       name: "AdhesiveTech Products",
@@ -669,6 +1299,30 @@ const dummyConstructionData = [
   {
     id: 39,
     product: "Drywall Joint Compound",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "JointCraft Solutions",
     supplierDetail: {
       name: "JointCraft Solutions",
@@ -687,6 +1341,30 @@ const dummyConstructionData = [
   {
     id: 40,
     product: "Metal Roofing Panels",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "MetalRoofing Supplies",
     supplierDetail: {
       name: "MetalRoofing Supplies",
@@ -705,6 +1383,30 @@ const dummyConstructionData = [
   {
     id: 41,
     product: "Insulation Material",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "InsulatePro",
     supplierDetail: {
       name: "InsulatePro",
@@ -723,6 +1425,30 @@ const dummyConstructionData = [
   {
     id: 42,
     product: "Construction Nails",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "NailMaster",
     supplierDetail: {
       name: "NailMaster",
@@ -741,6 +1467,56 @@ const dummyConstructionData = [
   {
     id: 43,
     product: "Concrete Blocks",
+    productDetail: {
+      detail: {
+        category: "Plumbing and Electricity",
+        subCategory: "N/A",
+        material: "Pipe",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100",
+        plan: "Payment Plan",
+        method: "Mobile Transfer",
+        total: "10,000",
+        deposit: "20%",
+        breakdown: {
+          plan1: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan2: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan3: {
+            amount: 2000,
+            date: "2024-04-03",
+            percentage: "20%",
+          },
+          plan4: {
+            amount: 2000,
+            date: "2024-05-03",
+            percentage: "20%",
+          },
+          plan5: {
+            amount: 2000,
+            date: "2024-06-03",
+            percentage: "20%",
+          },
+        },
+      },
+      deliveryPlan: {
+        option: "Contractor",
+        destination: "N/A",
+        pricing: "N/A",
+        cost: "N/A",
+      },
+    },
     supplierName: "BlockCraft Supplies",
     supplierDetail: {
       name: "BlockCraft Supplies",
@@ -759,6 +1535,30 @@ const dummyConstructionData = [
   {
     id: 44,
     product: "Paint Rollers",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "ColorTech Paints",
     supplierDetail: {
       name: "ColorTech Paints",
@@ -777,6 +1577,30 @@ const dummyConstructionData = [
   {
     id: 45,
     product: "Drywall Sheets",
+    productDetail: {
+      detail: {
+        category: "Shell Equipment",
+        subCategory: "Roofing",
+        material: "Sheets",
+        rental: "N/A",
+        quantity: "200",
+      },
+
+      paymentPlan: {
+        price: "1000",
+        plan: "Fixed | Upfront",
+        method: "Bank Transfer",
+        total: "205,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "SheetMaster",
     supplierDetail: {
       name: "SheetMaster",
@@ -795,6 +1619,30 @@ const dummyConstructionData = [
   {
     id: 46,
     product: "Tile Adhesive",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "TileBond Adhesives",
     supplierDetail: {
       name: "TileBond Adhesives",
@@ -813,6 +1661,30 @@ const dummyConstructionData = [
   {
     id: 47,
     product: "Lumber Boards",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "LumberLand Supplies",
     supplierDetail: {
       name: "LumberLand Supplies",
@@ -831,6 +1703,56 @@ const dummyConstructionData = [
   {
     id: 48,
     product: "Concrete Sealer",
+    productDetail: {
+      detail: {
+        category: "Plumbing and Electricity",
+        subCategory: "N/A",
+        material: "Pipe",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100",
+        plan: "Payment Plan",
+        method: "Mobile Transfer",
+        total: "10,000",
+        deposit: "20%",
+        breakdown: {
+          plan1: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan2: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan3: {
+            amount: 2000,
+            date: "2024-04-03",
+            percentage: "20%",
+          },
+          plan4: {
+            amount: 2000,
+            date: "2024-05-03",
+            percentage: "20%",
+          },
+          plan5: {
+            amount: 2000,
+            date: "2024-06-03",
+            percentage: "20%",
+          },
+        },
+      },
+      deliveryPlan: {
+        option: "Contractor",
+        destination: "N/A",
+        pricing: "N/A",
+        cost: "N/A",
+      },
+    },
     supplierName: "SealPro Products",
     supplierDetail: {
       name: "SealPro Products",
@@ -849,6 +1771,30 @@ const dummyConstructionData = [
   {
     id: 49,
     product: "Electrical Wiring",
+    productDetail: {
+      detail: {
+        category: "Site Equipment",
+        subCategory: "Safety Equipment",
+        material: "Helmets",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100,000",
+        plan: "Fixed | 50/50",
+        method: "Mobile Transfer",
+        total: "105,000",
+        deposit: "N/A",
+        breakdown: "N/A",
+      },
+      deliveryPlan: {
+        option: "Supplier",
+        destination: "Site A",
+        pricing: "Distance",
+        cost: "5,000",
+      },
+    },
     supplierName: "WireTech Solutions",
     supplierDetail: {
       name: "WireTech Solutions",
@@ -867,6 +1813,56 @@ const dummyConstructionData = [
   {
     id: 50,
     product: "Roofing Shingles",
+    productDetail: {
+      detail: {
+        category: "Plumbing and Electricity",
+        subCategory: "N/A",
+        material: "Pipe",
+        rental: "N/A",
+        quantity: "100",
+      },
+
+      paymentPlan: {
+        price: "100",
+        plan: "Payment Plan",
+        method: "Mobile Transfer",
+        total: "10,000",
+        deposit: "20%",
+        breakdown: {
+          plan1: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan2: {
+            amount: 2000,
+            date: "2024-03-03",
+            percentage: "20%",
+          },
+          plan3: {
+            amount: 2000,
+            date: "2024-04-03",
+            percentage: "20%",
+          },
+          plan4: {
+            amount: 2000,
+            date: "2024-05-03",
+            percentage: "20%",
+          },
+          plan5: {
+            amount: 2000,
+            date: "2024-06-03",
+            percentage: "20%",
+          },
+        },
+      },
+      deliveryPlan: {
+        option: "Contractor",
+        destination: "N/A",
+        pricing: "N/A",
+        cost: "N/A",
+      },
+    },
     supplierName: "Roofing Solutions Ltd.",
     supplierDetail: {
       name: "Roofing Solutions Ltd.",
