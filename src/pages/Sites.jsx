@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import PageBanner from "../components/pages/PageBanner";
+import SitesDisplay from "../layouts/sites/SitesDisplay";
 
 function Sites() {
   return (
-    <div>Sites</div>
-  )
+    <>
+      <div className="container py-3">
+        <PageBanner name="Sites" />
+        <SitesDisplay />
+      </div>
+    </>
+  );
 }
 
-export default Sites
+export default Sites;

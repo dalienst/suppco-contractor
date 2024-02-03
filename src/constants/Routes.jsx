@@ -12,7 +12,8 @@ const Inventory = React.lazy(() => import("../pages/Inventory"));
 const Orders = React.lazy(() => import("../pages/Orders"));
 const Delivery = React.lazy(() => import("../pages/Delivery"));
 const Employees = React.lazy(() => import("../pages/Employees"));
-
+const Books = React.lazy(() => import("../pages/Books"));
+const SiteDetail = React.lazy(() => import("../pages/SiteDetail"));
 
 function BaseRouter() {
   return (
@@ -43,6 +44,8 @@ function BaseRouter() {
           <Route path={publicLinks?.Orders} element={<Orders />} />
           <Route path={publicLinks?.Delivery} element={<Delivery />} />
           <Route path={publicLinks?.Employees} element={<Employees />} />
+          <Route path={publicLinks?.Books} element={<Books />} />
+          <Route path="/sites/:id/detail" element={<SiteDetail />} />
         </Routes>
       </Suspense>
     </Router>

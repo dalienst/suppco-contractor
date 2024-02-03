@@ -42,6 +42,12 @@ const NavList = () => {
         >
           <i className="bi bi-people"></i> Employees
         </Link>
+        <Link
+          to={publicLinks.Employees}
+          className="list-group-item list-group-item-action"
+        >
+          <i className="bi bi-cash-coin"></i> Books
+        </Link>
       </div>
     </>
   );

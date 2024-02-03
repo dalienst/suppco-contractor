@@ -8,6 +8,7 @@ const publicLinks = {
   Orders: "/orders",
   Delivery: "/deliveries",
   Employees: "/employees",
+  Books: "/books",
 };
 
 export { publicLinks };
