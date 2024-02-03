@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { siteData } from "../data/SiteData";
 import PageBanner from "../components/pages/PageBanner";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
 function SiteDetail() {
   const { siteId } = useParams();
   const [statusFilter, setStatusFilter] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const selectedSiteId = parseInt(siteId);
   const selectedSite = siteData.find((site) => site.id === selectedSiteId);
@@ -53,6 +59,7 @@ function SiteDetail() {
       <div className="container py-3">
         <PageBanner name={selectedSite.name} />
 
+        {/* Site information section */}
         <section className="mb-3">
           <div className="card">
             <div className="card-body">
@@ -74,6 +81,7 @@ function SiteDetail() {
           </div>
         </section>
 
+        {/* Site Orders section */}
         <section className="mb-3">
           <div className="d-flex flex-md-row flex-column justify-content-between">
             <div className="mb-2">
@@ -137,7 +145,6 @@ function SiteDetail() {
           <hr />
 
           {/* site orders table */}
-
           <div className="table-responsive">
             <table className="table">
               <thead>
@@ -154,7 +161,30 @@ function SiteDetail() {
                 {filteredOrderData.map((item) => (
                   <>
                     <tr key={item.id}>
-                      <td>{item.id}</td>
+                      <td>
+                        <Button onClick={handleShow}>{item.id}</Button>
+                      </td>
+
+                      {/* modal */}
+                      <Modal show={show} onHide={handleClose}>
+                        <div className="modal-header">
+                          <h5 className="modal-title">
+                            {item.product}
+                          </h5>
+                          <button
+                            type="button"
+                            className="btn-close"
+                            onClick={handleClose}
+                          ></button>
+                        </div>
+
+                        <div className="modal-body">
+                          
+                        </div>
+                      </Modal>
+
+                      {/* end of modal */}
+
                       <td>{item.product}</td>
                       <td>{item.supplierName}</td>
                       <td>{item.supplierCompany}</td>
