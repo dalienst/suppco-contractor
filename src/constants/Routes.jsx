@@ -45,7 +45,7 @@ function BaseRouter() {
           <Route path={publicLinks?.Delivery} element={<Delivery />} />
           <Route path={publicLinks?.Employees} element={<Employees />} />
           <Route path={publicLinks?.Books} element={<Books />} />
-          <Route path="/sites/:id/detail" element={<SiteDetail />} />
+          <Route path="/sites/:siteId/detail" element={<SiteDetail />} />
         </Routes>
       </Suspense>
     </Router>
