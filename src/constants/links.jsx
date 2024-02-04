@@ -3,7 +3,7 @@ const publicLinks = {
   Login: "/login",
   Register: "/register",
   Dashboard: "/dashboard",
-  Sites: "/site",
+  Sites: "/sites",
   Inventory: "/inventory",
   Orders: "/orders",
   Delivery: "/deliveries",
