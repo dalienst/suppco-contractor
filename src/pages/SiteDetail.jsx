@@ -4,6 +4,7 @@ import { siteData } from "../data/SiteData";
 import PageBanner from "../components/pages/PageBanner";
 import Button from "react-bootstrap/Button";
 import SiteOrderModal from "../layouts/sites/SiteOrderModal";
+import { publicLinks } from "../constants/links";
 
 function SiteDetail() {
   const { siteId } = useParams();
@@ -54,7 +55,7 @@ function SiteDetail() {
   return (
     <>
       <div className="container py-3">
-        <PageBanner name={selectedSite.name} />
+        <PageBanner name={selectedSite.name} link={publicLinks.Sites} />
 
         {/* Site information section */}
         <section className="mb-3">

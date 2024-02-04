@@ -267,7 +267,7 @@ const siteData = [
   {
     id: 2,
     image: "",
-    name: "Site A",
+    name: "Site B",
     description: "Site Description",
     address: "Site Address",
     phone: "+254 712345678",
@@ -682,7 +682,7 @@ const siteData = [
   {
     id: 3,
     image: "",
-    name: "Site A",
+    name: "Site C",
     description: "Site Description",
     address: "Site Address",
     phone: "+254 712345678",
@@ -1165,7 +1165,7 @@ const siteData = [
   {
     id: 4,
     image: "",
-    name: "Site A",
+    name: "Site D",
     description: "Site Description",
     address: "Site Address",
     phone: "+254 712345678",
@@ -1385,7 +1385,7 @@ const siteData = [
   {
     id: 5,
     image: "",
-    name: "Site A",
+    name: "Site E",
     description: "Site Description",
     address: "Site Address",
     phone: "+254 712345678",
