@@ -18,12 +18,31 @@ const NavList = () => {
         >
           <i className="bi bi-building"></i> Sites
         </Link>
-        <Link
-          to={publicLinks.Inventory}
-          className="list-group-item list-group-item-action"
-        >
-          <i className="bi bi-list-ol"></i> Inventory
-        </Link>
+        <div className="dropdown">
+          <Link
+            to="#"
+            className="list-group-item list-group-item-action dropdown-toggle"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i className="bi bi-list-ol"></i> Inventory
+          </Link>
+          <ul className="dropdown-menu dropdown-menu-dark">
+            <li>
+              <Link to={publicLinks?.SiteEquipment} className="dropdown-item">Site Equipment</Link>
+            </li>
+            <li>
+              <Link to={publicLinks?.ShellEquipment} className="dropdown-item">Shell Equipment</Link>
+            </li>
+            <li>
+              <Link to={publicLinks?.PlumbingElectricity} className="dropdown-item">Plumbing & Electricity</Link>
+            </li>
+            <li>
+              <Link to={publicLinks?.BuildersPlant} className="dropdown-item">Builder's Plant</Link>
+            </li>
+          </ul>
+        </div>
         <Link
           to={publicLinks.Orders}
           className="list-group-item list-group-item-action"
