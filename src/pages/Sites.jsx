@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { publicLinks } from "../constants/links";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { employees } from "../data/EmployeeData";
 
 function Sites() {
   const [show, setShow] = useState(false);
@@ -32,9 +33,98 @@ function Sites() {
               </Button>
             </div>
 
-            <Modal show={show} onHide={handleClose}>
+            <Modal
+              show={show}
+              onHide={handleClose}
+              dialogClassName="modal-dialog modal-dialog-scrollable"
+            >
               <div className="modal-header">
                 <h5 className="modal-title">Add New Site</h5>
+                <button
+                  className="btn-close"
+                  type="button"
+                  onClick={handleClose}
+                ></button>
+              </div>
+              <div className="modal-body">
+                <form action="">
+                  <div className="mb-3">
+                    <label htmlFor="ame" className="form-label">
+                      Site Name
+                    </label>
+                    <input
+                      type="text"
+                      name="siteName"
+                      className="form-control"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="siteImage" className="form-label">
+                      Site Image
+                    </label>
+                    <input
+                      type="file"
+                      name="siteImage"
+                      className="form-control"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="siteContact" className="form-label">
+                      Site Contact
+                    </label>
+                    <input
+                      type="text"
+                      name="siteContact"
+                      className="form-control"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="siteLocation" className="form-label">
+                      Site Location
+                    </label>
+                    <input
+                      type="text"
+                      name="siteLocation"
+                      className="form-control"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="siteEmployee" className="form-label">
+                      Site Employees
+                    </label>
+                    <select
+                      name="siteEmployee"
+                      id="siteEmployee"
+                      className="form-select"
+                      multiple
+                      size="5"
+                    >
+                      {employees.map((employee) => (
+                        <>
+                          <option value={employee.id}>{employee.name}</option>
+                        </>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div className="mb-3">
+                    <button className="btn btn-primary" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div className="modal-footer">
+                <div className="modal-footer">
+                  <button className="btn btn-secondary" onClick={handleClose}>
+                    Close
+                  </button>
+                </div>
               </div>
             </Modal>
           </div>

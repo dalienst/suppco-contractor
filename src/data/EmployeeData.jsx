@@ -43,4 +43,4 @@ const employees = [
   },
 ];
 
-export {employees}
+export { employees };
