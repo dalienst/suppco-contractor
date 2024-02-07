@@ -1,7 +1,8 @@
 const siteData = [
   {
     id: 1,
-    image: "",
+    image:
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
     name: "Site A",
     description: "Site Description",
     address: "Site Address",
@@ -317,7 +318,8 @@ const siteData = [
   },
   {
     id: 2,
-    image: "",
+    image:
+      "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHx8MA%3D%3D",
     name: "Site B",
     description: "Site Description",
     address: "Site Address",
@@ -783,7 +785,8 @@ const siteData = [
   },
   {
     id: 3,
-    image: "",
+    image:
+      "https://images.unsplash.com/photo-1610459716431-e07abcf74230?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbnN0cnVjdGlvbiUyMHNpdGV8ZW58MHx8MHx8fDA%3D",
     name: "Site C",
     description: "Site Description",
     address: "Site Address",
@@ -1317,7 +1320,8 @@ const siteData = [
   },
   {
     id: 4,
-    image: "",
+    image:
+      "https://images.unsplash.com/photo-1591955506264-3f5a6834570a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHx8MA%3D%3D",
     name: "Site D",
     description: "Site Description",
     address: "Site Address",
@@ -1588,7 +1592,8 @@ const siteData = [
   },
   {
     id: 5,
-    image: "",
+    image:
+      "https://images.unsplash.com/photo-1503708928676-1cb796a0891e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHx8MA%3D%3D",
     name: "Site E",
     description: "Site Description",
     address: "Site Address",
@@ -2149,5 +2154,3 @@ const siteData = [
 ];
 
 export { siteData };
-
-

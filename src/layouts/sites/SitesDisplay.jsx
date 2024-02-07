@@ -9,13 +9,13 @@ function SitesDisplay() {
         <div className="row">
           {siteData.map((item, index) => (
             <>
-              <div className="col-md-6 col-sm-12 mb-3 h-100">
+              <div className="col-md-4 col-sm-12 mb-3 h-100">
                 <div className="card">
-                  <div className="card-header">
-                    <h5 className="fw-bold">{item.name}</h5>
-                  </div>
+                  <img src={item.image} alt="" className="card-img-top cardImage" />
+
                   <div className="card-body">
-                    <p className="card-title fw-semibold">{item.description}</p>
+                    <p className="card-title fw-semibold">{item.name}</p>
+                    <p className="card-text">{item.description}</p>
                     <p className="card-text">
                       <strong>Location: </strong>
                       {item.address}
