@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { siteData } from "../data/SiteData";
-import PageBanner from "../components/pages/PageBanner";
 import Button from "react-bootstrap/Button";
 import SiteOrderModal from "../layouts/sites/SiteOrderModal";
 import { publicLinks } from "../constants/links";
@@ -55,7 +54,32 @@ function SiteDetail() {
   return (
     <>
       <div className="container py-3">
-        <PageBanner name={selectedSite.name} link={publicLinks.Sites} />
+        <section>
+          <div className="d-flex align-content-center justify-content-between mb-3">
+            <h2 className="fw-bold ">
+              <span>
+                <Link
+                  className="btn btn-primary btn-sm me-2"
+                  to={publicLinks?.Sites}
+                >
+                  <i className="bi bi-box-arrow-left"></i>
+                </Link>
+              </span>
+              {selectedSite.name}
+            </h2>
+
+            <div className="d-flex align-content-center justify-content-between">
+              <div>
+                <Link className="btn btn-warning me-2">Update</Link>
+              </div>
+              <div>
+                <Link to={publicLinks.Inventory} className="btn btn-success">
+                  Order
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Site information section */}
         <section className="mb-3">

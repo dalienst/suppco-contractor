@@ -14,6 +14,12 @@ const Delivery = React.lazy(() => import("../pages/Delivery"));
 const Employees = React.lazy(() => import("../pages/Employees"));
 const Books = React.lazy(() => import("../pages/Books"));
 const SiteDetail = React.lazy(() => import("../pages/SiteDetail"));
+const SiteEquipment = React.lazy(() => import("../pages/SiteEquipment"));
+const BuildersPlant = React.lazy(() => import("../pages/BuildersPlant"));
+const PlumbingElectricity = React.lazy(() =>
+  import("../pages/PlumbingElectricity")
+);
+const ShellEquipment = React.lazy(() => import("../pages/ShellEquipment"));
 
 function BaseRouter() {
   return (
@@ -46,6 +52,22 @@ function BaseRouter() {
           <Route path={publicLinks?.Employees} element={<Employees />} />
           <Route path={publicLinks?.Books} element={<Books />} />
           <Route path="/sites/:siteId/detail" element={<SiteDetail />} />
+          <Route
+            path={publicLinks?.SiteEquipment}
+            element={<SiteEquipment />}
+          />
+          <Route
+            path={publicLinks?.ShellEquipment}
+            element={<ShellEquipment />}
+          />
+          <Route
+            path={publicLinks?.BuildersPlant}
+            element={<BuildersPlant />}
+          />
+          <Route
+            path={publicLinks?.PlumbingElectricity}
+            element={<PlumbingElectricity />}
+          />
         </Routes>
       </Suspense>
     </Router>
