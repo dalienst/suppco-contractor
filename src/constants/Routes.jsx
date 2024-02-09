@@ -16,6 +16,9 @@ const Books = React.lazy(() => import("../pages/Books"));
 const SiteDetail = React.lazy(() => import("../pages/SiteDetail"));
 const SiteEquipment = React.lazy(() => import("../pages/SiteEquipment"));
 const BuildersPlant = React.lazy(() => import("../pages/BuildersPlant"));
+const ShellEquipmentDetail = React.lazy(() =>
+  import("../pages/ShellEquipmentDetail")
+);
 const PlumbingElectricity = React.lazy(() =>
   import("../pages/PlumbingElectricity")
 );
@@ -67,6 +70,10 @@ function BaseRouter() {
           <Route
             path={publicLinks?.PlumbingElectricity}
             element={<PlumbingElectricity />}
+          />
+          <Route
+            path="/shell/:shellItemId/inventory"
+            element={<ShellEquipmentDetail />}
           />
         </Routes>
       </Suspense>
