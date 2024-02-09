@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import InventoryTypes from "../layouts/inventory/InventoryTypes";
+import InventoryHeader from "../layouts/inventory/InventoryHeader";
 
 function Inventory() {
   return (
-    <div>Inventory</div>
-  )
+    <div className="container py-3">
+      <InventoryHeader />
+      <hr />
+      <InventoryTypes />
+    </div>
+  );
 }
 
-export default Inventory
+export default Inventory;

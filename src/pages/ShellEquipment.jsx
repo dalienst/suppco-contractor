@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { publicLinks } from "../constants/links";
-import { shell } from "../data/inventory/shellEquipment";
+import { shell } from "../data/inventory/shellEquipmentData";
 
 function ShellEquipment() {
   return (
@@ -59,7 +59,7 @@ function ShellEquipment() {
                               {subCategory.items.map((item) => (
                                 <Link
                                   className="list-group-item list-group-item-action"
-                                  to={`#collapseItem${shell.id}-${subCategory.id}-${item.id}`}
+                                  to={`/shell/${item.id}/inventory`}
                                   aria-expanded="false"
                                 >
                                   {item.item}
