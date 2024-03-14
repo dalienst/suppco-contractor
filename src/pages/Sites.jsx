@@ -49,12 +49,23 @@ function Sites() {
               <div className="modal-body">
                 <form action="">
                   <div className="mb-3">
-                    <label htmlFor="ame" className="form-label">
+                    <label htmlFor="siteName" className="form-label">
                       Site Name
                     </label>
                     <input
                       type="text"
                       name="siteName"
+                      className="form-control"
+                    />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="description" className="form-label">
+                      Site Description
+                    </label>
+                    <input
+                      type="text"
+                      name="description"
                       className="form-control"
                     />
                   </div>
