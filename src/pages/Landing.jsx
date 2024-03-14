@@ -22,7 +22,7 @@ function Landing() {
             <p className="fw-semibold">Manage your construction from our site</p>
             <p className="fw-semibold">Inventory | Multiple Sites | Orders</p>
             <div className="mb-3">
-              <Link to={publicLinks.Dashboard} className="btn rounded-pill navbar-bg text-white fw-semibold px-3">Get Onboard</Link>
+              <Link to={publicLinks.Dashboard} className="btn btn-outline-dark rounded-pill fw-semibold px-3">Get Onboard</Link>
             </div>
             <small>*This is the contractor site. Access Supplier Site <Link>here</Link></small>
           </div>

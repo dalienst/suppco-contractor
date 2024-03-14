@@ -8,7 +8,7 @@ function InventoryHeader() {
       <section>
         <div className="d-flex align-content-center justify-content-between mb-3">
           <div>
-            <Link className="btn btn-primary me-2" to={publicLinks?.Dashboard}>
+            <Link className="btn btn-outline-primary btn-sm me-2" to={publicLinks?.Dashboard}>
               <i className="bi bi-box-arrow-left"></i>
             </Link>
           </div>
@@ -16,7 +16,7 @@ function InventoryHeader() {
             <h2 className="fw-bold ">Inventory</h2>
           </div>
           <div>
-            <Link className="btn btn-primary" to={publicLinks.Orders}>
+            <Link className="btn btn-outline-primary btn-sm" to={publicLinks.Orders}>
               Order
             </Link>
           </div>
