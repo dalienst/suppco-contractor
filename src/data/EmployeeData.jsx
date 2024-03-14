@@ -4,6 +4,7 @@ const employees = [
     name: "Jennifer",
     position: "Manager",
     phone: "+254 712345679",
+    site: "Site A",
     email: "jMn8R@example.com",
   },
   {
@@ -11,6 +12,7 @@ const employees = [
     name: "Michael",
     position: "Developer",
     phone: "+254 712345680",
+    site: "Site B",
     email: "mDv9R@example.com",
   },
   {
@@ -18,6 +20,7 @@ const employees = [
     name: "Emily",
     position: "Designer",
     phone: "+254 712345681",
+    site: "Site C",
     email: "eDs1R@example.com",
   },
   {
@@ -25,6 +28,7 @@ const employees = [
     name: "Daniel",
     position: "Analyst",
     phone: "+254 712345682",
+    site: "Site A",
     email: "dAl2R@example.com",
   },
   {
@@ -32,6 +36,7 @@ const employees = [
     name: "Jessica",
     position: "Engineer",
     phone: "+254 712345683",
+    site: "Site E",
     email: "jEn3R@example.com",
   },
   {
@@ -39,6 +44,7 @@ const employees = [
     name: "Ryan",
     position: "Technician",
     phone: "+254 712345684",
+    site: "Site A",
     email: "rTc4R@example.com",
   },
 ];

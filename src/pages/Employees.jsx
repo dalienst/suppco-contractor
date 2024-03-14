@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { publicLinks } from "../constants/links";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { employees } from "../data/EmployeeData";
 
 function Employees() {
   const [show, setShow] = useState(false);
@@ -130,7 +131,30 @@ function Employees() {
 
         <section>
           <div className="table-responsive">
-            <table className="table table-bordered"></table>
+            <table className="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                  <th>Site</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                {employees.map((employee) => (
+                  <>
+                    <tr>
+                      <td>{employee.name}</td>
+                      <td>{employee.email}</td>
+                      <td>{employee.phone}</td>
+                      <td>{employee.site}</td>
+                      <td>{employee.position}</td>
+                    </tr>
+                  </>
+                ))}
+              </tbody>
+            </table>
           </div>
         </section>
       </div>
