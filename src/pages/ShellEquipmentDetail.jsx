@@ -8,7 +8,7 @@ function ShellEquipmentDetail() {
   const selectedShellItemId = parseInt(shellItemId);
   const selectedItem = shell
     .flatMap((category) => category.subCategory) // Flatten the nested arrays
-    .flatMap((subCategory) => subCategory.items) // Flatten the nested arrays
+    .flatMap((subCategory) => subCategory.items)
     .find((item) => item.id === selectedShellItemId);
 
   const [searchQuery, setSearchQuery] = useState("");
@@ -32,7 +32,7 @@ function ShellEquipmentDetail() {
             </div>
 
             <div>
-              <h2 className="fw-bold ">{selectedItem?.item}</h2>
+              <h2 className="fw-bold">{selectedItem?.item}</h2>
             </div>
 
             <div className="d-flex align-content-center justify-content-between">
@@ -49,7 +49,7 @@ function ShellEquipmentDetail() {
               </div>
 
               <div>
-                <Link className="btn btn-primary">Order</Link>
+                <Link to={`/order/${shellItemId}/aggregate`} className="btn btn-primary">Order</Link>
               </div>
             </div>
           </div>
