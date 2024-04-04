@@ -54,7 +54,11 @@ function OrderAggregate() {
             </div>
 
             <div className="mb-3">
-                
+              <div className="d-flex align-content-center justify-content-between mb-3">
+                <div>
+                  <Link className="btn btn-outline-danger">Cancel</Link>
+                </div>
+              </div>
             </div>
           </form>
         </section>
