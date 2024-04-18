@@ -6,7 +6,7 @@ function OrderAggregate() {
   const { shellItemId } = useParams();
   const selectedShellItemId = parseInt(shellItemId);
   const selectedItem = shell
-    .flatMap((category) => category.subCategory) // Flatten the nested arrays
+    .flatMap((category) => category.subCategory)
     .flatMap((subCategory) => subCategory.items)
     .find((item) => item.id === selectedShellItemId);
 
@@ -57,6 +57,14 @@ function OrderAggregate() {
               <div className="d-flex align-content-center justify-content-between mb-3">
                 <div>
                   <Link className="btn btn-outline-danger">Cancel</Link>
+                </div>
+                <div>
+                  <Link
+                    to={`/order-form/${shellItemId}/aggregate`}
+                    className="btn btn-outline-success"
+                  >
+                    Proceed
+                  </Link>
                 </div>
               </div>
             </div>

@@ -16,6 +16,9 @@ const Books = React.lazy(() => import("../pages/Books"));
 const SiteDetail = React.lazy(() => import("../pages/SiteDetail"));
 const SiteEquipment = React.lazy(() => import("../pages/SiteEquipment"));
 const BuildersPlant = React.lazy(() => import("../pages/BuildersPlant"));
+const AggregateOrderForm = React.lazy(() =>
+  import("../pages/AggregateOrderForm")
+);
 const ShellEquipmentDetail = React.lazy(() =>
   import("../pages/ShellEquipmentDetail")
 );
@@ -79,6 +82,10 @@ function BaseRouter() {
           <Route
             path="/order/:shellItemId/aggregate"
             element={<OrderAggregate />}
+          />
+          <Route
+            path="/order-form/:shellItemId/aggregate"
+            element={<AggregateOrderForm />}
           />
         </Routes>
       </Suspense>
