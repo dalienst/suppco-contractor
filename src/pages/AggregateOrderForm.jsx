@@ -48,6 +48,7 @@ function AggregateOrderForm() {
             <hr />
 
             <h6>Delivery Details</h6>
+            <hr />
             <div className="row">
               <div className="col-md-4 col-sm-12">
                 <div className="mb-3">
@@ -83,11 +84,89 @@ function AggregateOrderForm() {
                   </label>
                   <div className="input-group">
                     <input type="number" className="form-control" />
-                    <select name="timeline" id="timeline" className="form-select">
+                    <select
+                      name="timeline"
+                      id="timeline"
+                      className="form-select"
+                    >
                       <option value="days">Days</option>
                       <option value="weeks">Weeks</option>
                       <option value="months">Months</option>
                     </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+            <h6>Payment Details</h6>
+            <p>This product has a fixed payment option</p>
+            <hr />
+            <div>
+              <div className="row">
+                <div className="col-md-4 col-sm-12">
+                  <div className="mb-3">
+                    <label htmlFor="price" className="form-label">
+                      Product Price
+                    </label>
+                    <input
+                      type="number"
+                      name="price"
+                      placeholder="1,000"
+                      className="form-control"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-4 col-sm-12">
+                  <div className="mb-3">
+                    <label htmlFor="deliveryCharge" className="form-label">
+                      Delivery Charges
+                    </label>
+                    <input
+                      type="number"
+                      name="deliveryCharge"
+                      placeholder="5,000"
+                      className="form-control"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-4 col-sm-12">
+                  <div className="mb-3">
+                    <label htmlFor="totalPrice" className="form-label">
+                      Total Price
+                    </label>
+                    <input
+                      type="number"
+                      name="totalPrice"
+                      placeholder="15,000"
+                      className="form-control"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mb-3">
+                <div className="d-flex align-content-center justify-content-between mb-3">
+                  <div>
+                    <Link
+                      to={`/order/${shellItemId}/aggregate`}
+                      className="btn btn-outline-danger"
+                    >
+                      Cancel
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      to={`/order-form/${shellItemId}/aggregate`}
+                      className="btn btn-outline-success"
+                    >
+                      Proceed
+                    </Link>
                   </div>
                 </div>
               </div>
