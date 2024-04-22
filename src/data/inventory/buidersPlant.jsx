@@ -16,6 +16,7 @@ const buildersPlant = [
       email: "bigsuppliers@me.com",
       phone: "+1 123 456 7890",
     },
+    location: "Site A",
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ const buildersPlant = [
       email: "bigsuppliers@me.com",
       phone: "+1 123 456 7890",
     },
+    location: "Site E",
   },
   {
     id: 3,
@@ -52,6 +54,7 @@ const buildersPlant = [
       email: "bigsuppliers@me.com",
       phone: "+1 123 456 7890",
     },
+    location: "Site C",
   },
   {
     id: 4,
@@ -70,6 +73,7 @@ const buildersPlant = [
       email: "bigsuppliers@me.com",
       phone: "+1 123 456 7890",
     },
+    location: "Site C",
   },
 ];
 
