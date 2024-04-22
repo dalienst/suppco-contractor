@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { shell } from "../data/inventory/shellEquipmentData";
 import { employees } from "../data/EmployeeData";
 import { siteData } from "../data/SiteData";
+import Modal from "react-bootstrap/Modal";
 
 function AggregateOrderForm() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const { shellItemId } = useParams();
   const selectedShellItemId = parseInt(shellItemId);
   const selectedItem = shell
     .flatMap((category) => category.subCategory)
     .flatMap((subCategory) => subCategory.items)
     .find((item) => item.id === selectedShellItemId);
+
   return (
     <>
       <div className="container py-2">
@@ -162,11 +169,29 @@ function AggregateOrderForm() {
                   </div>
                   <div>
                     <Link
-                      to={`/order-form/${shellItemId}/aggregate`}
+                      onClick={handleShow}
                       className="btn btn-outline-success"
                     >
-                      Proceed
+                      Submit
                     </Link>
+
+                    <Modal show={show} onHide={handleClose}>
+                      <div className="modal-header">
+                        <h5 className="modal-title">Notification</h5>
+                        <button
+                          className="btn-close"
+                          type="button"
+                          onClick={handleClose}
+                        ></button>
+                      </div>
+                      <div className="modal-body">
+                        <p>
+                          Order for {selectedItem?.item} has successfully been
+                          placed. You will be notified once the supplier
+                          accepts the order.
+                        </p>
+                      </div>
+                    </Modal>
                   </div>
                 </div>
               </div>
