@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { dummyConstructionData } from "../../data/OrdersData";
+import { Link } from "react-router-dom";
+import DashboardOrderModal from "./DashboardOrderModal";
 
 function DashboardOrdersTable() {
   const [statusFilter, setStatusFilter] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedOrderId, setSelectedOrderId] = useState(null);
 
   const filteredData = dummyConstructionData.filter((item) => {
     // Filter by status
@@ -113,7 +116,16 @@ function DashboardOrdersTable() {
               {filteredData.map((item) => (
                 <>
                   <tr key={item.id}>
-                    <td>{item.id}</td>
+                    <td>
+                      <Link
+                        className="btn btn-sm btn-outline-primary"
+                        onClick={() => {
+                          setSelectedOrderId(item.id);
+                        }}
+                      >
+                        {item.id}
+                      </Link>
+                    </td>
                     <td>{item.product}</td>
                     <td>{item.supplierName}</td>
                     <td>{item.supplierCompany}</td>
@@ -150,6 +162,15 @@ function DashboardOrdersTable() {
           </table>
         </div>
       </section>
+
+      {selectedOrderId && (
+        <DashboardOrderModal
+          order={filteredData.find((item) => item.id === selectedOrderId)}
+          onClose={() => {
+            setSelectedOrderId(null);
+          }}
+        />
+      )}
     </>
   );
 }

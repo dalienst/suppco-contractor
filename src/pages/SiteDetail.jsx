@@ -48,7 +48,6 @@ function SiteDetail() {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     // Perform search based on the searchQuery state
-    // You can customize this logic if needed
   };
 
   return (

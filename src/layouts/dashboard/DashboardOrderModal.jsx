@@ -2,13 +2,12 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 
-const SiteOrderModal = ({ onClose, order }) => {
+const DashboardOrderModal = ({ onClose, order }) => {
   const productDetail = order?.productDetail?.detail;
   const paymentPlan = order?.productDetail?.paymentPlan;
   const deliveryPlan = order?.productDetail?.deliveryPlan;
   const supplierDetail = order?.supplierDetail;
   const supplierCompany = order?.supplierCompanyDetail;
-
   return (
     <>
       <Modal
@@ -190,4 +189,4 @@ const SiteOrderModal = ({ onClose, order }) => {
   );
 };
 
-export default SiteOrderModal;
+export default DashboardOrderModal;
