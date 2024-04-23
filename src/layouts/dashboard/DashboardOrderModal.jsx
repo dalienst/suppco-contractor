@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 
@@ -26,29 +27,9 @@ const DashboardOrderModal = ({ onClose, order }) => {
         </div>
 
         <div className="modal-body">
-          {/* supplier detail */}
-          <div className="mb-3">
-            <h5 className="fw-semibold mb-2">Supplier Detail</h5>
-            <hr className="mb-2" />
-            <p>
-              <strong>Name: </strong>
-              {supplierDetail.name}
-            </p>
-            <p>
-              <strong>Location: </strong>
-              {supplierDetail.address}
-            </p>
-            <p>
-              <strong>Contact: </strong>
-              {supplierDetail.phone}
-            </p>
-            <hr className="mb-3" />
-          </div>
-          {/* end of supplier detail */}
-
           {/* supplier company detail */}
           <div className="mb-3">
-            <h5 className="fw-semibold mb-2">Company Detail</h5>
+            <h5 className="fw-semibold mb-2">Supplier Company Detail</h5>
             <hr className="mb-2" />
             <p>
               <strong>Name: </strong>
@@ -105,7 +86,7 @@ const DashboardOrderModal = ({ onClose, order }) => {
           {/* end of product detail */}
 
           {/* delivery detail */}
-          <div className="mb-3">
+          {/* <div className="mb-3">
             <h5 className="fw-semibold mb-2">Delivery Detail</h5>
             <hr className="mb-2" />
             <p>
@@ -129,7 +110,7 @@ const DashboardOrderModal = ({ onClose, order }) => {
             </p>
 
             <hr className="mb-3" />
-          </div>
+          </div> */}
           {/* end of delivery detail */}
 
           {/* payment detail */}
