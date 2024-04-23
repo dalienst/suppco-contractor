@@ -57,6 +57,7 @@ function BuildersPlant() {
                   <th>Rate</th>
                   <th>Supplier</th>
                   <th>Location</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -74,6 +75,14 @@ function BuildersPlant() {
                       <td>{item.ratePerHour}</td>
                       <td>{item.supplier?.name}</td>
                       <td>{item.location}</td>
+                      <td>
+                        <Link
+                          to={`/builders-plant/${item.id}/order`}
+                          className="btn btn-sm btn-outline-info"
+                        >
+                          Order
+                        </Link>
+                      </td>
                     </tr>
                   </>
                 ))}

@@ -27,6 +27,9 @@ const PlumbingElectricity = React.lazy(() =>
 );
 const ShellEquipment = React.lazy(() => import("../pages/ShellEquipment"));
 const OrderAggregate = React.lazy(() => import("../pages/OrderAggregate"));
+const BuildersPlantOrder = React.lazy(() =>
+  import("../pages/BuildersPlantOrder")
+);
 
 function BaseRouter() {
   return (
@@ -86,6 +89,10 @@ function BaseRouter() {
           <Route
             path="/order-form/:shellItemId/aggregate"
             element={<AggregateOrderForm />}
+          />
+          <Route
+            path="/builders-plant/:plantId/order"
+            element={<BuildersPlantOrder />}
           />
         </Routes>
       </Suspense>
