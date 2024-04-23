@@ -4,6 +4,7 @@ import { shell } from "../data/inventory/shellEquipmentData";
 import { employees } from "../data/EmployeeData";
 import { siteData } from "../data/SiteData";
 import Modal from "react-bootstrap/Modal";
+import { publicLinks } from "../constants/links";
 
 function AggregateOrderForm() {
   const [show, setShow] = useState(false);
@@ -187,9 +188,17 @@ function AggregateOrderForm() {
                       <div className="modal-body">
                         <p>
                           Order for {selectedItem?.item} has successfully been
-                          placed. You will be notified once the supplier
-                          accepts the order.
+                          placed. You will be notified once the supplier accepts
+                          the order.
                         </p>
+                      </div>
+                      <div className="modal-footer">
+                        <Link
+                          to={publicLinks.ShellEquipment}
+                          className="btn btn-sm btn-outline-success"
+                        >
+                          Builders Plant
+                        </Link>
                       </div>
                     </Modal>
                   </div>
