@@ -17,7 +17,7 @@ function Employees() {
 
   return (
     <>
-      <div className="container py-5">
+      <div className="container py-2">
         <section>
           <div className="d-flex align-content-center justify-content-between mb-3">
             <div>
@@ -117,11 +117,24 @@ function Employees() {
                 <div className="mb-3">
                   <button
                     type="submit"
-                    className="btn btn-outline-primary w-100"
+                    className="btn btn-sm btn-outline-primary w-100"
                     onClick={handleSubmit}
                   >
                     Add
                   </button>
+                </div>
+
+                <div className="mb-2">
+                  <Link
+                    className="btn btn-primary btn-sm w-100"
+                    onClick={() =>
+                      alert(
+                        "Registration Link Copied. Send the link to the potential employee"
+                      )
+                    }
+                  >
+                    Send Link
+                  </Link>
                 </div>
               </form>
             </div>
