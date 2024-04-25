@@ -1,6 +1,5 @@
 import React from "react";
 import PageBanner from "../components/pages/PageBanner";
-import { Link } from "react-router-dom";
 import { dummyConstructionData } from "../data/OrdersData";
 
 function Books() {
@@ -20,13 +19,25 @@ function Books() {
       parseFloat(order.productDetail.paymentPlan.total.replace(/,/g, ""))
     );
   }, 0);
-  console.log(activeOrdersTotalPrice);
+
+  const completedOrders = dummyConstructionData.filter(
+    (order) => order.status === "Completed"
+  );
+  const completedOrdersTotalPrice = completedOrders.reduce((total, order) => {
+    return (
+      total +
+      parseFloat(order.productDetail.paymentPlan.total.replace(/,/g, ""))
+    );
+  }, 0);
 
   return (
     <>
       <div className="container py-3">
         <PageBanner name="Books of Accounting" />
         <section className="mt-2 py-2">
+          <h5 className="fw-bold text-secondary text-uppercase">
+            Orders Summary
+          </h5>
           <div className="row">
             <div className="col-md-4 col-sm-12 mb-2">
               <div className="card">
@@ -64,6 +75,40 @@ function Books() {
                   <p className="card-text fst-italic">
                     Total price of active orders
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <h5 className="fw-bold text-secondary text-uppercase">
+            transaction history
+          </h5>
+          <div className="row">
+            <div className="col-md-4 col-sm-12 mb-2">
+              <div className="card">
+                <h6 className="card-header">Money In</h6>
+                <div className="card-body">
+                  <p className="card-text fw-bold">Ksh 0</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 col-sm-12 mb-2">
+              <div className="card">
+                <h6 className="card-header">Money Out</h6>
+                <div className="card-body">
+                  <p className="card-text fw-bold">
+                    Ksh {completedOrdersTotalPrice}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 col-sm-12 mb-2">
+              <div className="card">
+                <h6 className="card-header">VAT Paid</h6>
+                <div className="card-body">
+                  <p className="card-text fw-bold">Ksh 0</p>
                 </div>
               </div>
             </div>
