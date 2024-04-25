@@ -30,16 +30,27 @@ const NavList = () => {
           </Link>
           <ul className="dropdown-menu dropdown-menu-dark">
             <li>
-              <Link to={publicLinks?.SiteEquipment} className="dropdown-item">Site Equipment</Link>
+              <Link to={publicLinks?.SiteEquipment} className="dropdown-item">
+                Site Equipment
+              </Link>
             </li>
             <li>
-              <Link to={publicLinks?.ShellEquipment} className="dropdown-item">Shell Equipment</Link>
+              <Link to={publicLinks?.ShellEquipment} className="dropdown-item">
+                Shell Equipment
+              </Link>
             </li>
             <li>
-              <Link to={publicLinks?.PlumbingElectricity} className="dropdown-item">Plumbing & Electricity</Link>
+              <Link
+                to={publicLinks?.PlumbingElectricity}
+                className="dropdown-item"
+              >
+                Plumbing & Electricity
+              </Link>
             </li>
             <li>
-              <Link to={publicLinks?.BuildersPlant} className="dropdown-item">Builder's Plant</Link>
+              <Link to={publicLinks?.BuildersPlant} className="dropdown-item">
+                Builder's Plant
+              </Link>
             </li>
           </ul>
         </div>
@@ -62,7 +73,7 @@ const NavList = () => {
           <i className="bi bi-people"></i> Employees
         </Link>
         <Link
-          to={publicLinks.Employees}
+          to={publicLinks.Books}
           className="list-group-item list-group-item-action"
         >
           <i className="bi bi-cash-coin"></i> Books
